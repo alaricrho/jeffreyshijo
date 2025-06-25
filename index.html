@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width,initial-scale=1" name="viewport">
+    <meta name="theme-color" content="#fff4f4">
+    <link href="css/styles.css" rel="stylesheet">
+    <link href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
+    <title>Jeffrey Shijo</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon-16x16.png">
+    <link rel="manifest" href="img/favicons/site.webmanifest">
+    
+    
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const remoteLinks = document.querySelectorAll('a[href^="//"], a[href^="http"]');
+            [...remoteLinks].forEach((anchor) => {
+                anchor.target = "_blank";
+            });
+    
+            const toggleButton = document.getElementById('theme-toggle');
+            const currentTheme = localStorage.getItem('theme') || 'light';
+            document.documentElement.setAttribute('data-theme', currentTheme);
+    
+            if (currentTheme === 'dark') {
+                toggleButton.classList.add('dark-mode');
+            }
+    
+            toggleButton.addEventListener('click', () => {
+                const theme = document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+                document.documentElement.setAttribute('data-theme', theme);
+                localStorage.setItem('theme', theme);
+                toggleButton.classList.toggle('dark-mode');
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <button id="theme-toggle" aria-label="Toggle Dark Mode"></button>
+    <main class="wrapper">
+        <article class="intro">
+            <div class="layout-spacer"></div>
+            <header class="intro-header">
+                <nav class="intro-header__nav">
+                    <ul>
+                        
+                        <li><a href="projects.html"><span>PROJECTS</span></a></li>
+                        <li><a href=""><span>SAY HI!&nbsp;</span></a></li>
+                    </ul>
+                </nav>
+            </header>
+            <header class="intro__header">
+                <h1>Hi, I'm&nbsp;<br><strong>Jeffrey Shijo</strong></h1>
+            </header>
+            <section class="intro-content">
+                <h2>I'm an <a href="https://www.linkedin.com/in/jeffrey-shijo">autodidact and technophile</a>, wandering at&nbsp;the&nbsp;confluence of&nbsp;technology, research &amp;&nbsp;mental well-being.</h2>
+                <p>I like to <a href="https://medium.com/@jeffreysjs12">write</a> and <a href="">share insights</a> about the&nbsp;stuff I <a href="">make</a> &amp; learn.</p>
+                <p>And btw, I also freelance. So, if you guys wanna <a href="">hit me up</a>, you know where to <a href="">find me</a>!!
+                <hr>
+            </section>
+            <div class="intro__decor"></div>
+        </article>
+    </main>
+</html>
