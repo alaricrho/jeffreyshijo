@@ -42,6 +42,13 @@ document.addEventListener("DOMContentLoaded", () => {
             tech: "Technology Stack",
             techsub: "Python \u00A0|\u00A0 Pandas \u00A0|\u00A0 HTML/CSS/JS \u00A0|\u00A0 K-NN \u00A0|\u00A0 XGBoost",
             image: "img/fourthpage.png"
+        },
+        "Urha": {
+            title: "Urha",
+            description: "This is a simple and effective educational app built using ReactJS for the frontend and Flask for the backend. It is connected to Firebase to store and manage the questions and answers. The app does not require users to sign up or log in. Instead it allows anyone to access the content freely and choose their preferred language between English and Malayalam. The purpose of the app is to support learning by providing clear and organized question answer sets that users can go through at their own pace. It is designed to help learners revise and understand key topics without the pressure of formal testing.",
+            tech: "Technology Stack",
+            techsub: "Python \u00A0|\u00A0 Flask \u00A0|\u00A0 React.js \u00A0|\u00A0 Firebase ",
+            image: "img/sixthpage.png"
         }
     };
 
