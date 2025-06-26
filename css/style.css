@@ -8,7 +8,7 @@ article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,su
 body {
 	--color-text: #EDDBC2;
     --color-bg: #0c0c0c;
-    --color-link: #1ab3de;
+    --color-link: #EDDBC2;
     --color-link-hover: #f1f1f1;
 	--color-deco: #141414;
 	--color-side: #EDDBC2;
@@ -34,6 +34,7 @@ body {
 	background: var(--color-bg);
 }
 
+
 .js .loading::after {
 	content: '';
 	position: fixed;
@@ -47,7 +48,7 @@ body {
 	border-radius: 50%;
 	opacity: 0.4;
 	background: var(--color-link);
-	animation: loaderAnim 0.7s linear infinite alternate forwards;
+	animation: loaderAnim 1.0s linear infinite alternate forwards;
 }
 
 @keyframes loaderAnim {
